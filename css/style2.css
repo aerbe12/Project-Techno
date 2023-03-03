@@ -139,7 +139,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #407C87;
 	transition: .4s;
 }
 
@@ -203,7 +203,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #407C87, #38d39f, #407C87);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;

@@ -31,12 +31,13 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	transform: scale(0.5);
+	transform: scale(0.4);
 	transform-origin: center center;
 	margin-top: -100px
 }
 
 .login-content{
+	margin-top: -80px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -172,7 +173,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #407C87, #38d39f, #407C87);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
