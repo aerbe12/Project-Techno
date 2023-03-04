@@ -1,8 +1,13 @@
+<?php
+ include "./Components/SignUp/process_signup.php";
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="css/SignUp.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,7 +19,7 @@
        
       </div>
       <div class="login-content">
-        <form>
+        <form action="./Components/SignUp/process_signup.php" method="POST">
           <img src="img/avatar.svg" />
           <h3 class="title">Isi data diri Anda</h3>
           <div class="input-div one">
@@ -42,7 +47,7 @@
             </div>
             <div class="div">
               <h5>Umur</h5>
-              <input type="text" name="agee" class="input" />
+              <input type="text" name="age" class="input" />
             </div>
           </div>
 
@@ -56,13 +61,13 @@
             </div>
           </div>
 
-          <input type="submit" class="btn" value="Sign Up" />
+          <input type="submit" class="btn" value="Sign Up" name="submit" />
 
           <div class="login-message">
             <h2 class="title">WELCOME! <BR></h2>
             <span>If you already have an account, <br>  </span>
             <span>please login with your personal information</span>
-            <br><button class="btn-signin">Sign Ip</button>
+            <br><button class="btn-signin">Sign In</button>
           </div>
         </form>
       </div>
@@ -70,3 +75,4 @@
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
+
