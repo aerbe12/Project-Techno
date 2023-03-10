@@ -16,7 +16,7 @@
 
     <div class="container">
       <div class="img">
-       
+      <img  src="./img/signup-avatar.png"/>
       </div>
       <div class="login-content">
         <form action="./Components/SignUp/process_signup.php" method="POST">
@@ -47,7 +47,7 @@
             </div>
             <div class="div">
               <h5>Umur</h5>
-              <input type="text" name="age" class="input" />
+              <input type="number" name="age" class="input" />
             </div>
           </div>
 
@@ -67,12 +67,24 @@
             <h2 class="title">WELCOME! <BR></h2>
             <span>If you already have an account, <br>  </span>
             <span>please login with your personal information</span>
-            <br><button class="btn-signin">Sign In</button>
+            <br>
+            <button onclick="redirectToSignInPage()" class="btn-signin">Sign In</button>
           </div>
         </form>
       </div>
+     
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+    
+    <script>
+      function redirectToSignInPage() {
+      // Prevent the default behavior of the button
+      event.preventDefault();
+      // Redirect the user to the sign-in page
+      window.location.href = "login.php";
+      }
+
+    </script>
   </body>
 </html>
 

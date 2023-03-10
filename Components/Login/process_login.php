@@ -10,36 +10,40 @@ session_start();
 if(isset($_POST['submit'])) {
     
     // Get the username and password from the form
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
+    $username = $_POST['username'];
+    $password = $_POST['password'];
     
-    // Query the database to check if the user exists
-    $query = "SELECT * FROM tb_user WHERE name = '$username' AND password = '$password'";
-    $result = mysqli_query($conn, $query);
+    // Prepare the SQL statement
+    $stmt = mysqli_prepare($conn, "SELECT * FROM tb_user WHERE name = ? AND password = ?");
+    
+    // Bind the parameters to the statement
+    mysqli_stmt_bind_param($stmt, "ss", $username, $password);
+    
+    // Execute the statement
+    mysqli_stmt_execute($stmt);
+    
+    // Store the result
+    $result = mysqli_stmt_get_result($stmt);
     
     // Check if the query was successful
     if(mysqli_num_rows($result) == 1) {
-        
         // The user exists, so set the session variables
         $_SESSION['username'] = $username;
         $_SESSION['loggedin'] = true;
         
         // Redirect the user to the home page
         header("Location: ../../SignUp.php");
-        
     } else {
-        
         // The user does not exist, so display an error message
-        echo "Invalid username or password";
-    }
+        echo "<script>alert('Invalid username or password');</script>";
+        
     
-    // Close the database connection
-    mysqli_close($conn);
+    
 }
 
-
-
-
-
+// Close the statement and the database connection
+mysqli_stmt_close($stmt);
+mysqli_close($conn);
+}
 
 ?>
