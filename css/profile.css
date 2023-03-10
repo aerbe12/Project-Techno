@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-color: #f0f1f6;
+  overflow-y: scroll;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1f6;
+  height: 90px;
+  padding: 0 20px;
+  box-shadow: 0px 3px 10px #4a474a;
+}
+
+.navbar-logo img {
+  height: 7vh; /* Use 6% of the viewport height for the image height */
+  width: auto;
+  margin-left: 5vw; /* Use 5% of the viewport width for the margin */
+}
+
+.navbar-button {
+  background-color: #407c87;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.navbar-button:hover {
+  background-color: #407c87;
+}
+
+/* NAVBAR END */
+
+/* PROFILE */
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+}
+
+.profile-image img {
+  height: 450px;
+  width: 350px;
+  border-radius: 10%;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.profile-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.profile-data {
+  color: #407c87;
+  text-align: center;
+  margin-right: 200px;
+}
+
+.profile-data h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.profile-data p {
+  text-align: start;
+  margin: 5px 0;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #407c87;
+  width: 600px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Transaction Styles */
+.transaction-container {
+  padding: 0px 200px 200px 200px;
+  text-align: center;
+  color: #407c87;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.transaction-details p {
+  font-size: 20spx;
+  margin-bottom: 20px;
+}
+
+.transaction-button {
+  margin-top: 40px;
+  background-color: #d3e1e2;
+  height: 62px;
+  width: 205px;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px;
+  border: none;
+  color: #407c87;
+  font-size: 20px;
+}
+.profile-container,
+.transaction-container {
+  height: 80vh; /* Set the height of these containers to 100% of the viewport height */
+}
+
+@media screen and (max-width: 768px) {
+  /* On screens smaller than 768px, adjust the navbar layout */
+  .navbar {
+    height: auto;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    margin: 10px 0;
+  }
+
+  .navbar-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .profile-container {
+    height: auto;
+  }
+
+  .profile-image img {
+    height: auto;
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .profile-data {
+    margin-right: 0;
+  }
+
+  .profile-data p {
+    width: 100%;
+  }
+
+  .transaction-container {
+    padding: 0px 20px;
+  }
+
+  .transaction-details {
+    margin-top: 10px;
+  }
+
+  .transaction-button {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
