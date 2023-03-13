@@ -1,0 +1,66 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1f6;
+  height: 90px;
+  padding: 0 20px;
+  box-shadow: 0px 3px 10px #4a474a;
+}
+
+.navbar-logo img {
+  height: 7vh; /* Use 6% of the viewport height for the image height */
+  width: auto;
+  margin-left: 5vw; /* Use 5% of the viewport width for the margin */
+}
+
+/* Landing Page avatar */
+.navbar-avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/* Landing Page avatar */
+
+.navbar-button {
+  background-color: #407c87;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.navbar-button:hover {
+  background-color: #407c87;
+}
+
+/* NAVBAR END */
+
+@media screen and (max-width: 768px) {
+  /* On screens smaller than 768px, adjust the navbar layout */
+  .navbar {
+    height: auto;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    margin: 10px 0;
+  }
+
+  .navbar-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-avatar img {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}

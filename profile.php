@@ -14,18 +14,9 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <img src="./img/logo.png" alt="Your Logo" />
-      </div>
-      <div class="navbar-menu">
-        <form action="./Components/Logout/logout.php" method="post">
-          <button type="submit" class="navbar-button" name="logout">
-            Logout
-          </button>
-        </form>
-      </div>
-    </nav>
+   <?php 
+    include "./Components/Navbar/navbar.php"
+   ?>
     <!-- NAVBAR END -->
 
     <!-- PROFILE -->
@@ -47,18 +38,7 @@
     <!-- PROFILE END -->
 
     <!-- NO Transaction -->
-    <div class="transaction-container">
-      <h2>Transaksi yang telah dilakukan</h2>
-      <hr />
-      <div class="transaction-details">
-        <p>
-          Belum ada transaksi yang dilakukan,
-          <br />
-          ayo lakukan transaksi untuk mendapatkan hasil yang maksimal!
-        </p>
-        <button class="transaction-button">Pesan sekarang</button>
-      </div>
-    </div>
+ <?php include "./Components/Transaction/noTransaction.php" ?>
     <!-- NO Transaction END-->
   </body>
 </html>
