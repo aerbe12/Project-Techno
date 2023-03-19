@@ -64,7 +64,7 @@ body {
 
 /* Transaction Styles */
 .transaction-container {
-  padding: 0px 200px 200px 200px;
+  /* padding: 0px 200px 200px 200px; */
   text-align: center;
   color: #407c87;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 .transaction-details p {
-  font-size: 20spx;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 

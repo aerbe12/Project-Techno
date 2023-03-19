@@ -8,7 +8,7 @@
   <head>
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="css/SignUp.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -27,10 +27,31 @@
               <i class="fas fa-user"></i>
             </div>
             <div class="div">
-              <h5>Nama</h5>
+              <h5>Username</h5>
               <input type="text" name="username" class="input" />
             </div>
           </div>
+          <div class="input-div full-name">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>Nama Lengkap</h5>
+            <input type="text" name="full_name" class="input" />
+          </div>
+        </div>
+        <div class="input-div gender">
+          <div class="i">
+            <i class="fas fa-venus-mars"></i>
+          </div>
+          <div class="div">
+            <h5>Gender</h5>
+            <select name="gender" class="input">
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
+        </div>
           <div class="input-div pass">
             <div class="i">
               <i class="fas fa-lock"></i>

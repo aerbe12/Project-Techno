@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['loggedin'] = true;
         
         // Redirect the user to the home page
-        header("Location: ../../SignUp.php");
+        header("Location: ../../profile.php");
     } else {
         // The user does not exist, so display an error message
         echo "<script>alert('Invalid username or password');</script>";

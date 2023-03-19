@@ -7,49 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <title>Navbar</title>
   </head>
   <body>
     <?php
           // Check if the current URL matches the specific page URL
-          $specific_page_path = '../../landingPage.php';
+          $specific_page_path = '../../homepage.php';
           $current_page = basename($_SERVER['SCRIPT_FILENAME']);
-          $user_on_specific_page = ($current_page === 'landingPage.php');
+          $user_on_specific_page = ($current_page === 'profile.php');
+          $landing_page = ($current_page === 'index.php');
           // Generate the navbar HTML
           echo '<nav class="navbar">';
           echo '<div class="navbar-logo">';
-          echo '<img src="./img/logo.png" alt="Your Logo" />';
+          echo '<a href="./homepage.php"><img src="./img/logo.png" alt="Your Logo" /> </a>';
           echo '</div>';
           echo '<div class="navbar-menu">';
           if ($user_on_specific_page) {
-            // Display the avatar
-            echo '<div class="navbar-avatar"><img src="./img/avatar.svg" alt="User Avatar" /></div>';
-          } else {
             // Display the logout button
             echo '<form action="./Components/Logout/logout.php" method="post"><button type="submit" class="navbar-button" name="logout">Logout</button></form>';
-          }
+          } else if ($landing_page) {
+            // Display the login button
+            echo '<button type="submit" class="navbar-button" name="login">Login</button>';
+          } else {
+          // Display the avatar
+          echo '<div class="navbar-avatar">
+          <a href="./profile.php">
+          <img src="img/user 1.svg" alt="User Avatar" />
+          </a>
+          </div>';
+        }
           echo '</div>';
           echo '</nav>';
           ?>
   </body>
   </html>
   
-  <!-- NAVBAR -->
-  <!-- <nav class="navbar">
-    <div class="navbar-logo">
-      <img src="./img/logo.png" alt="Your Logo" />
-    </div>
-    <div class="navbar-menu">
-      <form action="./Components/Logout/logout.php" method="post">
-        <button type="submit" class="navbar-button" name="logout">
-          Logout
-        </button>
-      </form>
-    </div>
-  </nav> -->
-  <!-- NAVBAR END -->

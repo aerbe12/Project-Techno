@@ -1,0 +1,216 @@
+/* .navbar img {
+  width: 40px !important;
+} */
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel {
+  height: 500px;
+}
+
+h1 {
+  font-family: "Kaisei Opti";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 139px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #f0f1f6;
+}
+
+.carousel-caption {
+  margin-bottom: 72vh;
+}
+
+.carousel-caption h1 {
+  font-size: 100px;
+}
+
+.carousel-item {
+  opacity: 80%;
+}
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.apakah h1 {
+  color: #407c87;
+}
+
+.apakah p {
+  color: #407c87;
+  text-align: justify;
+}
+
+button {
+  background-color: #407c87;
+  color: white;
+  border: 0ch;
+  padding: 5px 15px;
+  border-radius: 7px !important;
+}
+
+.cardback {
+  background-color: #407c87;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.bungkuscard {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas: "image" "text" "stats";
+  width: 300px;
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+.card-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size: 13px;
+}
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+.card-stats .stat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+.card-stats .value {
+  font-size: 22px;
+  font-weight: 500;
+}
+.card-stats .value sup {
+  font-size: 12px;
+}
+.card-stats .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/*card2*/
+.card-image.card2 {
+  background: url("img2.jpg");
+  background-size: cover;
+}
+.card-text.card2 .date {
+  color: rgb(255, 77, 7);
+}
+.card-stats.card2 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.card-stats.card2 {
+  background: rgb(255, 77, 7);
+}
+/*card3*/
+.card-image.card3 {
+  background: url("img3.jpg");
+  background-size: cover;
+}
+.card-text.card3 .date {
+  color: rgb(0, 189, 63);
+}
+.card-stats.card3 .border {
+  border-left: 1px solid rgb(14, 122, 50);
+  border-right: 1px solid rgb(14, 122, 50);
+}
+.card-stats.card3 {
+  background: rgb(0, 189, 63);
+}
+
+.free {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.free h1 {
+  color: #407c87;
+  margin-bottom: 70px;
+}
+
+.free button {
+  width: 100%;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #d3e1e2;
+}
+
+.footer h1 {
+  color: #407c87;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icon img {
+  width: 60px;
+  margin-top: 50px;
+}
