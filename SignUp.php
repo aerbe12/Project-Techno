@@ -78,7 +78,7 @@
             </div>
             <div class="div">
               <h5>Email</h5>
-              <input type="text" name="email" class="input" />
+              <input type="email" name="email" class="input" />
             </div>
           </div>
 
