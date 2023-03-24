@@ -65,7 +65,7 @@ hr {
 }
 .content-form p {
   color: #407c87;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .client-form {
@@ -88,6 +88,7 @@ input {
   padding: 10px;
   margin-bottom: 15px;
   border: none;
+  width: 100%;
 }
 
 ::placeholder {
@@ -126,7 +127,6 @@ input {
 }
 
 .btn-submit {
-  margin-top: 2vh;
   align-self: end;
   font-size: 15px;
   color: #fff;
@@ -137,4 +137,35 @@ input {
   border: none;
   cursor: pointer;
   margin-bottom: 5vh;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.btn p {
+  width: 560px;
+  font-size: 14px;
+  color: #407c87;
+  text-align: start;
+  font-weight: 600;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #407c87;
+  text-decoration-line: underline;
+}
+
+.fitness-form {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fitness-form h4 {
+  color: #407c87;
 }
