@@ -39,7 +39,7 @@
               <input type="password" name="password" class="input" />
             </div>
           </div>
-          <a href="SignUp.php">Forgot Password?</a>
+          <a href="SignUp.php">Register</a>
           <input type="submit" name ="submit"class="btn" value="Login" />
         </form>
       </div>

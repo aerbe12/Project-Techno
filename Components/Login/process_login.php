@@ -2,7 +2,6 @@
 
 include "db_connect.php";
 
-
 // Start a session
 session_start();
 
@@ -14,7 +13,7 @@ if(isset($_POST['submit'])) {
     $password = $_POST['password'];
     
     // Prepare the SQL statement
-    $stmt = mysqli_prepare($conn, "SELECT * FROM tb_user WHERE name = ? AND password = ?");
+    $stmt = mysqli_prepare($conn, "SELECT id_user FROM tb_user WHERE name = ? AND password = ?");
     
     // Bind the parameters to the statement
     mysqli_stmt_bind_param($stmt, "ss", $username, $password);
@@ -28,6 +27,8 @@ if(isset($_POST['submit'])) {
     // Check if the query was successful
     if(mysqli_num_rows($result) == 1) {
         // The user exists, so set the session variables
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['id_user'] = $row['id_user'];
         $_SESSION['username'] = $username;
         $_SESSION['loggedin'] = true;
         
@@ -36,14 +37,12 @@ if(isset($_POST['submit'])) {
     } else {
         // The user does not exist, so display an error message
         echo "<script>alert('Invalid username or password');</script>";
-        
+    }
     
-    
+    // Close the statement and the database connection
+    mysqli_stmt_close($stmt);
 }
 
-// Close the statement and the database connection
-mysqli_stmt_close($stmt);
 mysqli_close($conn);
-}
 
 ?>

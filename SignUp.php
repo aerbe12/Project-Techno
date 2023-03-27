@@ -45,7 +45,7 @@
             <i class="fas fa-venus-mars"></i>
           </div>
           <div class="div">
-            <h5>Gender</h5>
+            <h5>Jenis Kelamin</h5>
             <select name="gender" class="input">
               <option value="Laki-laki">Laki-laki</option>
               <option value="Perempuan">Perempuan</option>
@@ -85,9 +85,9 @@
           <input type="submit" class="btn" value="Sign Up" name="submit" />
 
           <div class="login-message">
-            <h2 class="title">WELCOME! <BR></h2>
-            <span>If you already have an account, <br>  </span>
-            <span>please login with your personal information</span>
+            <h2 class="title">Selamat datang! <BR></h2>
+            <span>Jika anda sudah mempunyai akun, <br>  </span>
+            <span>tolong login menggunakan akun personal anda</span>
             <br>
             <button onclick="redirectToSignInPage()" class="btn-signin">Sign In</button>
           </div>
