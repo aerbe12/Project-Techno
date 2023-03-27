@@ -93,7 +93,7 @@
           <p>Tidak hanya konsultasi dengan ahli,
             anda juga akan mendapat
             makanan sehatnya..</p>
-          <button> Detail </button>
+          <button onclick="location.href='healthylife.php'"> Detail </button>
         </div>
         <div class="card-stats">
           
@@ -108,7 +108,7 @@
             mendapatkan waktu berharga
             untuk konsultasi dengan
             ahli gizi.</p>
-          <button> Detail </button>
+          <button onclick="location.href='basic.php'"> Detail </button>
         </div>
         <div class="card-stats card2">
           
@@ -123,7 +123,7 @@
               konsultasi dan makanan sehat,
               anda juga dapat akses ke
               tempat pelatihan.</p>
-            <button> Detail </button>
+            <button onclick="location.href='bodygoals.php'" > Detail </button>
           </div>
           <div class="card-stats card3">
             

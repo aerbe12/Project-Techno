@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +32,7 @@
           // Display the avatar
           echo '<div class="navbar-avatar">
           <a href="./profile.php">
-          <img src="img/user 1.svg" alt="User Avatar" />
+          <img src="./img/user 1.svg" alt="User Avatar" />
           </a>
           </div>';
         }
