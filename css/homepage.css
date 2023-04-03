@@ -1,6 +1,7 @@
-/* .navbar img {
-  width: 40px !important;
-} */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f1f6;
+}
 
 .carousel-inner {
   height: 500px;
@@ -17,18 +18,19 @@ h1 {
   font-size: 96px;
   line-height: 139px;
   /* identical to box height */
-
   text-align: center;
-
   color: #f0f1f6;
 }
 
 .carousel-caption {
-  margin-bottom: 72vh;
+  margin-bottom: 65vh;
 }
 
 .carousel-caption h1 {
   font-size: 100px;
+}
+.carousel-caption p {
+  font-size: 40px;
 }
 
 .carousel-item {
@@ -46,6 +48,7 @@ h1 {
 
 .apakah p {
   color: #407c87;
+  font-size: 24px;
   text-align: justify;
 }
 
@@ -213,4 +216,107 @@ button {
 .icon img {
   width: 60px;
   margin-top: 50px;
+}
+
+.btn-score {
+  font-size: 24px;
+  height: 50px;
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .carousel-caption {
+    margin-bottom: 25vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 50px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .apakah h1 {
+    font-size: 32px;
+  }
+
+  .apakah p {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 5px !important;
+  }
+
+  .cardback {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .card {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  .card-image {
+    border-radius: 10px;
+  }
+
+  .card-text .date {
+    font-size: 10px;
+  }
+
+  .card-text p {
+    font-size: 12px;
+  }
+
+  .card-text h2 {
+    font-size: 24px;
+  }
+
+  .card-stats .value {
+    font-size: 16px;
+  }
+
+  .card-stats .value sup {
+    font-size: 8px;
+  }
+
+  .card-stats .type {
+    font-size: 9px;
+  }
+
+  .free {
+    padding: 30px;
+  }
+
+  .free h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .icon img {
+    width: 40px;
+    margin-top: 30px;
+  }
 }

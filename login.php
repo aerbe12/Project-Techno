@@ -1,6 +1,4 @@
-<?php
- include "./Components/Login/process_login.php";
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -49,14 +47,6 @@
     // Get the login form
     const form = document.querySelector('form');
     
-    // Listen for the form submit event
-    // form.addEventListener('submit', function(event) {
-    //     // Prevent the form from submitting
-    //     event.preventDefault();
-        
-    //     // Display an alert message
-    //     alert('Please enter your username and password.');
-    // });
 </script>
   </body>
 </html>

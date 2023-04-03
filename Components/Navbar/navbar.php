@@ -10,35 +10,37 @@
     <title>Navbar</title>
   </head>
   <body>
-    <?php
-          // Check if the current URL matches the specific page URL
-          $specific_page_path = '../../homepage.php';
-          $current_page = basename($_SERVER['SCRIPT_FILENAME']);
-          $user_on_specific_page = ($current_page === 'profile.php');
-          $landing_page = ($current_page === 'index.php');
-          // Generate the navbar HTML
-          echo '<nav class="navbar">';
-          echo '<div class="navbar-logo">';
-          echo '<a href="./homepage.php"><img src="./img/logo.png" alt="Your Logo" /> </a>';
-          echo '</div>';
-          echo '<div class="navbar-menu">';
-          if ($user_on_specific_page) {
-            // Display the logout button
-            echo '<form action="./Components/Logout/logout.php" method="post"><button type="submit" class="navbar-button" name="logout">Logout</button></form>';
-          } else if ($landing_page) {
-            // Display the login button
-            echo '<button type="submit" class="navbar-button" name="login">Login</button>';
-          } else {
-          // Display the avatar
-          echo '<div class="navbar-avatar">
-          <a href="./profile.php">
-          <img src="./img/user 1.svg" alt="User Avatar" />
-          </a>
-          </div>';
-        }
-          echo '</div>';
-          echo '</nav>';
-          ?>
-  </body>
-  </html>
-  
+  <?php
+    
+      
+    $user_is_logged_in = isset($_SESSION['id_user']);
+    // Generate the navbar HTML
+    echo '<nav class="navbar">';
+    echo '<div class="navbar-logo">';
+    echo '<a href="./index.php"><img src="./img/logo.png" alt="Your Logo" /> </a>';
+    echo '</div>';
+    echo '<div class="navbar-menu">';
+    if (!$user_is_logged_in) {
+      // Display the login button
+      echo '<a href="./login.php" class="navbar-button">Login</a>';
+    } else {
+      if (strpos($_SERVER['REQUEST_URI'], 'profile.php') !== false) {
+        // If on the profile page, display the logout button only
+        echo '<form action="./Components/Logout/logout.php" method="post"><button type="submit" class="navbar-button" name="logout">Logout</button></form>';
+      } else {
+        // Display the avatar
+        echo '<div class="navbar-avatar">
+              <a href="./profile.php">
+              <img src="./img/user 1.svg" alt="User Avatar" />
+              </a>
+              </div>';
+      }
+    }
+    echo '</div>';
+    echo '</nav>';
+  ?>
+
+
+</body>
+</html>
+

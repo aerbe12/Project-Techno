@@ -20,7 +20,7 @@
           <br />
           ayo lakukan transaksi untuk mendapatkan hasil yang maksimal!
         </p>
-        <button class="transaction-button">Pesan sekarang</button>
+        <button onclick="location.href='./index.php'" class="transaction-button">Pesan sekarang</button>
       </div>
     </div>
     <!-- NO Transaction END-->

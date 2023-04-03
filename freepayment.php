@@ -10,6 +10,8 @@
   <body>
 
     <?php 
+       // Check if the user is logged in
+       session_start();
     include './Components/Navbar/navbar.php'
     ?>
     <div class="container">

@@ -17,10 +17,19 @@ body {
   align-items: center;
   color: #407c87;
   height: 100%;
+  margin-bottom: 5vh;
 }
 .title {
   margin-top: 10vh;
   text-align: center;
+  font-size: 24px;
+}
+
+hr {
+  align-self: center;
+  width: 20vw;
+  border-color: #407c87;
+  border-top: 10px;
 }
 
 .content {

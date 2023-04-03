@@ -75,4 +75,3 @@ include './Components/Login/loginsession.php';
     </body>
     </html>
     
-    <!-- <img src="./img/profile.jpg" alt="Your Profile Image" /> -->

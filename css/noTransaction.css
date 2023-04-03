@@ -28,5 +28,15 @@
   border: none;
   color: #407c87;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.transaction-button:hover {
+  background-color: #407c87;
+  color: #d3e1e2;
+}
+
+.transaction-button:active {
+  transform: scale(0.95);
 }
 /* Transaction END */

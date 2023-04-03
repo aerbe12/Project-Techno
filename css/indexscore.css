@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f1f6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 5vh;
+  color: #407c87;
+}
+
+.subtitle {
+  color: #407c87;
+  font-weight: 300;
+  margin-bottom: 2vh;
+}
+
+hr {
+  align-self: center;
+  width: 20vw;
+  border-color: #407c87;
+  border-top: 10px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.score-sangat-baik {
+  background: #14ff00; /* green */
+  margin-top: 2vh;
+  width: 326px;
+  height: 81px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  align-self: center;
+  margin-bottom: 2vh;
+}
+
+.score-baik {
+  background: #00bfff; /* blue */
+  margin-top: 2vh;
+  width: 326px;
+  height: 81px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 2vh;
+}
+
+.score-buruk {
+  background: #ff8c00; /* orange */
+  margin-top: 2vh;
+  width: 326px;
+  height: 81px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 2vh;
+}
+
+.score-sangat-buruk {
+  background: #ff0000; /* red */
+  margin-top: 2vh;
+  width: 326px;
+  height: 81px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 2vh;
+}
+
+.description {
+  margin-top: 3vh;
+  color: #407c87;
+  text-align: justify;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.advice {
+  color: #407c87;
+  text-align: justify;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.advice h3 {
+  margin-bottom: 2vh;
+}
+
+.btn-offer {
+  margin-top: 40px;
+  background-color: #d3e1e2;
+  height: 62px;
+  width: 205px;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px;
+  border: none;
+  color: #407c87;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-offer:hover {
+  background-color: #407c87;
+  color: #d3e1e2;
+}
+
+.btn-offer:active {
+  transform: scale(0.95);
+}

@@ -10,9 +10,11 @@
     <title>Healthy Life</title>
 </head>
 <body>
-<?php
-        include './Components/Navbar/navbar.php'
-    ?>
+        <?php
+           // Check if the user is logged in
+             session_start();
+            include './Components/Navbar/navbar.php'
+        ?>
 <div class="container">
         <div class="content">
             <img src="img/diet 1.svg" alt="">
@@ -31,29 +33,25 @@
         <div class="content-form">
             <p>Lengkapi data diri anda pada kolom berikut untuk memesan paket ini</p>
             <div class="client-form">
-                <h4>Tentang client</h4>
-                <form id="form1" action="basicprocess.php">
-                    <input type="text" placeholder="Apakah anda alergi terhadap makanan tertentu?">
-                    <input type="text" placeholder="Apakah anda memiliki riwayat penyakit tertentu?">
-                    <input type="text" placeholder="Apakah anda memiliki olahraga khusus yang anda gemari?">
-                </form>
-            </div>
-            <div class="doctor-form">
-                <h4>Tentang dokter</h4>
-                <form id="form2">
+                <form id="form1" method="POST" action="./Components/packets/healthyLifeProcess.php">
+                    <h4>Tentang client</h4>
+                    <input type="text" name="alergi" placeholder="Apakah anda alergi terhadap makanan tertentu?">
+                    <input type="text" name="penyakit" placeholder="Apakah anda memiliki riwayat penyakit tertentu?">
+                    <input type="text" name="olahraga" placeholder="Apakah anda memiliki olahraga khusus yang anda gemari?">
+                    <h4>Tentang Dokter</h4>
                     <p class="consultation-type">Ingin melakukan konsultasi offline atau online?
-                        <select class="consultation-type" name="consultation-type">
-                        <option value="offline">Offline</option>
-                        <option value="online">Online</option>
-                    </select>
+                        <select class="consultation-type" name="consultation_type">
+                            <option value="offline">Offline</option>
+                            <option value="online">Online</option>
+                        </select>
                     </p>
                     <p class="consultation-place">Ingin melakukan konsultasi di rumah sakit mana?
-                        <select class="consultation-place" name="consultation-place">
-                        <option value="Denpasar">Denpasar</option>
-                        <option value="Tabanan">Tabanan</option>
-                    </select>
+                        <select class="consultation-place" name="consultation_place">
+                            <option value="Denpasar">Denpasar</option>
+                            <option value="Tabanan">Tabanan</option>
+                        </select>
                     </p>
-                    </form>
+                </form>
 
              </div>
              <p>Jika memilih online, kolom ini dapat di kosongkan. Pihak US akan menghubungi anda untuk info selanjutnya</p>
