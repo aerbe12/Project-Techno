@@ -95,7 +95,7 @@
             <p>Tidak hanya konsultasi dengan ahli,
               anda juga akan mendapat
               makanan sehatnya..</p>
-            <button onclick="location.href='healthylife.php'"> Detail </button>
+            <button id="btn-healthy" onclick="redirectToHealthy()"> Detail </button>
           </div>
           <div class="card-stats">
             
@@ -110,7 +110,7 @@
               mendapatkan waktu berharga
               untuk konsultasi dengan
               ahli gizi.</p>
-            <button onclick="location.href='basic.php'"> Detail </button>
+            <button id="btn-basic" onclick="redirectToBasic()"> Detail </button>
           </div>
           <div class="card-stats card2">
             
@@ -125,7 +125,7 @@
                 konsultasi dan makanan sehat,
                 anda juga dapat akses ke
                 tempat pelatihan.</p>
-              <button onclick="location.href='bodygoals.php'"> Detail </button>
+              <button id="btn-bodygoals" onclick="redirectToBodyGoals()"> Detail </button>
             </div>
             <div class="card-stats card3">
               
@@ -169,7 +169,7 @@
          <div class="row">
  
           <div class="icon">
-            <img src="img/instagram.svg" alt="">
+          <a href="https://www.instagram.com/us.forhealthness/"><img src="img/instagram.svg" alt="Instagram"></a>
             <img src="img/tik-tok.svg" alt="">
             <img src="img/youtube.svg" alt="">
             <img src="img/facebook.svg" alt="">
@@ -181,18 +181,53 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-
-      const redirectToFreeButton = document.querySelector('btn-free');
+      const redirectToFreeButton = document.querySelector('.btn-free');
       redirectToFreeButton.addEventListener('click', redirectToFree);
+      const redirectToHealthyButton = document.querySelector('.btn-healthy');
+      redirectToHealthyButton.addEventListener('click', redirectToHealthy);
+      const redirectToBasicButton = document.querySelector('.btn-basic');
+      redirectToBasicButton.addEventListener('click', redirectToBasic);
+      const redirectToBodyGoalsButton = document.querySelector('.btn-bodygoals');
+      redirectToBodyGoalsButton.addEventListener('click', redirectToBodyGoals);
 
-    function redirectToFree() {
-      console.log("Button clicked!");
-      if (isLoggedIn()) {
-        location.href = "./freepayment.php";
-      } else {
-        location.href = "./login.php";
+      function isLoggedIn() {
+        return <?php echo isset($_SESSION['id_user']) ? 'true' : 'false'; ?>;
       }
-    }
-    </script>
+
+      function redirectToFree() {
+        console.log("Button clicked!");
+        if (isLoggedIn()) {
+          location.href = "./freepayment.php";
+        } else {
+          location.href = "./login.php";
+        }
+      }
+
+      function redirectToHealthy() {
+        console.log("Button clicked!");
+        if (isLoggedIn()) {
+          location.href = "./healthylife.php";
+        } else {
+          location.href = "./login.php";
+        }
+      }
+
+      function redirectToBasic() {
+        console.log("Button clicked!");
+        if (isLoggedIn()) {
+          location.href = "./basic.php";
+        } else {
+          location.href = "./login.php";
+        }
+      }
+      function redirectToBodyGoals() {
+        console.log("Button clicked!");
+        if (isLoggedIn()) {
+          location.href = "./bodygoals.php";
+        } else {
+          location.href = "./login.php";
+        }
+      }
+</script>
   </body>
 </html>

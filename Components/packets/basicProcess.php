@@ -2,12 +2,15 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../vendor/autoload.php';
-require __DIR__ . '../../vendor/autoload.php';
+
+require __DIR__ . '../../../vendor/autoload.php';
 
 // Load environment variables from .env file
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+
+$smtp_username = $_ENV['SMTP_USERNAME'];
+$smtp_password = $_ENV['SMTP_PASSWORD'];
 
 // Start the session
 session_start();
@@ -62,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = getenv('SMTP_USERNAME');                  // SMTP username
-        $mail->Password   = getenv('SMTP_PASSWORD');                         // SMTP password
+        $mail->Username   = $smtp_username;                  // SMTP username
+        $mail->Password   = $smtp_password;                         // SMTP password
         $mail->SMTPSecure = 'tls';                                   // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 

@@ -3,8 +3,12 @@ require "db_connect.php";
 // Start a session
 session_start();
 
-// Include the email sending library
-require '../../vendor/autoload.php';
+require __DIR__ . '../../../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$smtp_username = $_ENV['SMTP_USERNAME'];
+$smtp_password = $_ENV['SMTP_PASSWORD'];
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -50,8 +54,8 @@ if(isset($_POST['submit'])) {
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'ultimatesolutionforhealthness@gmail.com';                  //SMTP username
-            $mail->Password   = 'isvuzgucuicdzbas';                   //SMTP password
+            $mail->Username = $smtp_username;                   //SMTP username
+            $mail->Password   = $smtp_password;                    //SMTP password
             $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
