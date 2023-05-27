@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kaisei Opti", serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #f0f1f6;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-family: "Kaisei Opti";
+  font-family: "Kaisei Opti", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -29,7 +29,7 @@ h1 {
 }
 
 .carousel-caption {
-  margin-bottom: 65vh;
+  margin-bottom: 70vh;
 }
 
 .carousel-caption h1 {
@@ -72,8 +72,8 @@ button {
   padding-bottom: 100px;
 }
 .bungkuscard {
+  margin-left: 5vw;
   width: 90vw;
-
   display: flex;
   align-items: center;
   justify-content: center;

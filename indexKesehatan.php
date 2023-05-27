@@ -28,7 +28,7 @@
         </div>
 
         <div class="content">
-            <form action="./IndexScore.php" method="POST">
+            <form action="./IndexScore.php" method="POST" onsubmit="return validateForm();" >
             <div class="card">
                 <p>1. Apakah anda sudah menerapkan pola hidup sehat?</p>
                 <input type="radio" id="answer1-ya" name="answer1" value="1">
@@ -76,4 +76,26 @@
     </div>
 
 </body>
+<script>
+        function validateForm() {
+            var questions = document.getElementsByClassName('card');
+            
+            for (var i = 0; i < questions.length; i++) {
+                var radios = questions[i].getElementsByTagName('input');
+                var answered = false;
+                
+                for (var j = 0; j < radios.length; j++) {
+                    if (radios[j].type === 'radio' && radios[j].checked) {
+                        answered = true;
+                        break;
+                    }
+                }
+
+                if (!answered) {
+                    alert('Tolong isi semua pertanyaan');
+                    return false;
+                }
+            }
+        }
+    </script>
 </html>
