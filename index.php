@@ -29,21 +29,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption  d-md-block">
               <h1>Ciptakan pola hidup sehat</h1>
               <p>dan dapatkan tubuh impian anda!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption  d-md-block">
               <h1>Setiap gerakan olahraga</h1>
               <p>adalah langkah maju menuju tubuh impian yang sehat dan bugar!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption  d-md-block">
               <h1>Merancang Pola Hidup Sehat</h1>
               <p>untuk mencapai kehidupan yang lebih sehat!</p>
             </div>

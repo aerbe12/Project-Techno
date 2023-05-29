@@ -4,6 +4,7 @@
     if (isset($_POST['submit'])) {
         $name = $_POST['username'];
         $password = $_POST['password'];
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
         $age = $_POST['age'];
         $email = $_POST['email'];
         $fullname = $_POST['full_name'];
@@ -18,10 +19,11 @@
             
             // Prepare the SQL statement
             $stmt = $conn->prepare($sql);
-            
+           
             // Bind the parameters to the SQL statement
-            $stmt->bind_param("ssisss", $name, $password, $age, $email, $fullname, $gender);
+            $stmt->bind_param("ssisss", $name, $password_hash, $age, $email, $fullname, $gender);
             
+          
             // Execute the SQL statement
             if ($stmt->execute()) {
                 

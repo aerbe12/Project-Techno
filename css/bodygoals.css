@@ -169,3 +169,61 @@ input {
 .fitness-form h4 {
   color: #407c87;
 }
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content {
+    margin-top: 5vh;
+  }
+
+  .content-title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .content-subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .content-form {
+    width: 100%;
+  }
+
+  .content-form p {
+    font-size: 12px;
+  }
+
+  .client-form form,
+  .doctor-form form,
+  .fitness-form form {
+    align-items: flex-start;
+  }
+
+  input,
+  .consultation-type select,
+  .consultation-place select {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .btn-submit {
+    margin-top: 2vh;
+    align-self: center;
+  }
+  .btn p {
+    width: 100%;
+    font-size: 12px;
+  }
+}

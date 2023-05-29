@@ -13,7 +13,7 @@
 }
 
 .transaction-details p {
-  font-size: 20spx;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -40,3 +40,17 @@
   transform: scale(0.95);
 }
 /* Transaction END */
+
+@media screen and (max-width: 768px) {
+  .transaction-container {
+    padding: 0;
+  }
+
+  .transaction-details {
+    margin-bottom: 5vh;
+  }
+  .transaction-details p {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

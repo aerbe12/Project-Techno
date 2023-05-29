@@ -138,3 +138,46 @@ input {
   cursor: pointer;
   margin-bottom: 5vh;
 }
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content {
+    margin-top: 5vh;
+  }
+
+  .content-title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .content-subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .content-form {
+    width: 100%;
+  }
+
+  .content-form p {
+    font-size: 14px;
+  }
+
+  .consultation-type select {
+    margin-left: 0;
+  }
+
+  .consultation-place select {
+    margin-left: 0;
+  }
+
+  .btn-submit {
+    margin-top: 2vh;
+    align-self: center;
+  }
+}

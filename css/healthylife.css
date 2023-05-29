@@ -158,3 +158,50 @@ input {
   color: #407c87;
   text-decoration-line: underline;
 }
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content {
+    margin-top: 5vh;
+  }
+
+  .content-title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .content-subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .content-form {
+    width: 100%;
+  }
+
+  .consultation-type select {
+    margin-left: 0;
+  }
+
+  .consultation-place select {
+    margin-left: 0;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .btn-submit {
+    align-self: center;
+    margin-top: 2vh;
+  }
+}

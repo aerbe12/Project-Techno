@@ -64,3 +64,36 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+  .container-box {
+    height: 80%;
+  }
+  .content {
+    padding: 0;
+    margin-top: 30%;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .input-otp {
+    width: 60%;
+    margin: 0;
+  }
+
+  .btn {
+    width: 50%;
+  }
+}

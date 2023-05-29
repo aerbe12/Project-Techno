@@ -231,28 +231,25 @@ button {
 
 /* For screens with a maximum width of 768px */
 @media (max-width: 768px) {
-  .carousel-inner {
-    height: 300px;
-  }
-
   .carousel {
-    height: 300px;
+    height: 220px;
   }
 
+  .carousel-caption {
+    margin: auto;
+  }
   h1 {
     font-size: 48px;
     line-height: 60px;
   }
 
-  .carousel-caption {
-    margin-bottom: 25vh;
-  }
-
   .carousel-caption h1 {
-    font-size: 50px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   .carousel-caption p {
-    font-size: 20px;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .about {
@@ -260,18 +257,39 @@ button {
     padding-bottom: 50px;
   }
 
+  .apakah {
+    display: flex;
+    flex-direction: column;
+  }
+
   .apakah h1 {
     font-size: 32px;
   }
 
   .apakah p {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
   }
 
+  .col-4 {
+    align-self: center;
+  }
+  .btn-score {
+    font-size: 12px;
+  }
   button {
     padding: 3px 10px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 5px !important;
+  }
+
+  #btn-free {
+    align-self: center;
+  }
+  .bungkuscard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .cardback {
@@ -321,6 +339,9 @@ button {
     margin-bottom: 30px;
   }
 
+  .footer h1 {
+    font-size: 24px;
+  }
   .icon img {
     width: 40px;
     margin-top: 30px;
