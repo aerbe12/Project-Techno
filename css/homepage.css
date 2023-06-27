@@ -229,6 +229,13 @@ button {
   height: 50px;
 }
 
+@media (max-width: 1280px) {
+  .carousel-caption {
+    top: 20px;
+    margin: 0;
+  }
+}
+
 /* For screens with a maximum width of 768px */
 @media (max-width: 768px) {
   .carousel {
@@ -236,7 +243,7 @@ button {
   }
 
   .carousel-caption {
-    margin: auto;
+    top: 50px;
   }
   h1 {
     font-size: 48px;
