@@ -172,7 +172,7 @@
           <a href="https://www.instagram.com/us.forhealthness/"><img src="img/instagram.svg" alt="Instagram"></a>
             <img src="img/tik-tok.svg" alt="">
             <img src="img/youtube.svg" alt="">
-            <img src="img/facebook.svg" alt="">
+          <a href ="https://www.facebook.com/profile.php?id=100090547650440"><img  src="img/facebook.svg" alt=""></a>
          </div>
 
         </div>
