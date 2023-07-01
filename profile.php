@@ -11,6 +11,7 @@ include './Components/Login/loginsession.php';
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <title>Profile</title>
   </head>
   <body>
